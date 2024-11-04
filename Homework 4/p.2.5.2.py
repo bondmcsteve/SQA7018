@@ -10,5 +10,19 @@
 # Import necessary package
 import numpy as np
 
+a_n = []
+b_n = []
+a_nplus = []
+b_nplus = []
+
 # We begin by defining the function for AGM
 def agm(x, y, n):
+    i = 0
+    # Loop statement
+    for i in range(0, n, 1)
+        # General formula for a and b terms
+        a_nplus = (1/2) * (an + bn)
+        b_nplus = np.sqrt(an + bn)
+        an = a_nplus
+        bn = b_nplus
+        return an, bn
