@@ -10,19 +10,29 @@
 # Import necessary package
 import numpy as np
 
-a_n = []
-b_n = []
-a_nplus = []
-b_nplus = []
+#a_n = []
+#b_n = []
+#a_nplus = []
+#b_nplus = []
 
 # We begin by defining the function for AGM
-def agm(x, y, n):
-    i = 0
+def agm(x, y, tol=1e-10):
+    a_n, b_n = x, y # Tutorial uses a and b for a_n and b_n
     # Loop statement
-    for i in range(0, n, 1)
+    while abs(a_n - b_n) > tol:
         # General formula for a and b terms
-        a_nplus = (1/2) * (an + bn)
-        b_nplus = np.sqrt(an + bn)
-        an = a_nplus
-        bn = b_nplus
-        return an, bn
+        a_nplus = (1/2) * (a_n + b_n)
+        b_nplus = np.sqrt(a_n * b_n)
+        a_n, b_n = a_nplus, b_nplus # Tutorial uses a_next and b_next for a_nplus and b_nplus
+    # Return converged value
+    return a_n # We can exclude b_n since a_n = b_n
+
+x = float(input("Enter x value : "))
+y = float(input ("Enter y value : "))
+#x = 1 # Original code
+#y = np.sqrt(2) # Original code
+agm_value = agm(x,y)
+
+# Calculation for Gauss constant
+G = 1 / agm_value
+print(agm_value, G) # Return both AGM and Gauss values
