@@ -33,5 +33,9 @@ def can_fit_in_grid(start_pos, direction, word):
     return False #If the word does not fit, and direction-check fails (Wrong input)
 
 # Test cases
-print(can_fit_in_grid("G7", "across", "HELLO"))
-print(can_fit_in_grid("M12", "down", "SCRABBLE"))
+#print(can_fit_in_grid("G7", "across", "HELLO"))
+#print(can_fit_in_grid("M12", "down", "SCRABBLE"))
+
+#Q4 Quiz 5
+#print(can_fit_in_grid("O15", "across", "HELLO"))
+print(can_fit_in_grid("H8", "diagonal", "WORD"))

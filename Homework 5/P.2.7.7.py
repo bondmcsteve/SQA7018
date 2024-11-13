@@ -1,6 +1,7 @@
 # This problem is based on Problem 2.7.7 from the textbook
 
 def is_palindrome_recursive(s):
+    s = ''.join(filter(str.isalnum, s.lower()))
     """Check if a string is a palindrome using recursion."""
     # Base cases: empty string or single character string is a palindrome
     if len(s) <= 1:
@@ -17,10 +18,13 @@ def is_palindrome_recursive(s):
     # If the first and last characters do not match, it's not a palindrome
     return False
 
+#Quiz 5, Q9
+print(is_palindrome_recursive("Able was I ere I saw Elba"))  # Expected output: True
 
-print(is_palindrome_recursive("racecar"))  # Expected output: True
-print(is_palindrome_recursive("hello"))  # Expected output: False
-print(is_palindrome_recursive("madam"))  # Expected output: True
-print(is_palindrome_recursive("a"))  # Expected output: True
-print(is_palindrome_recursive(""))  # Expected output: True
-print(is_palindrome_recursive("hei-roh"))
+#Original test cases
+# print(is_palindrome_recursive("racecar"))  # Expected output: True
+# print(is_palindrome_recursive("hello"))  # Expected output: False
+# print(is_palindrome_recursive("madam"))  # Expected output: True
+# print(is_palindrome_recursive("a"))  # Expected output: True
+# print(is_palindrome_recursive(""))  # Expected output: True
+# print(is_palindrome_recursive("hei-roh"))

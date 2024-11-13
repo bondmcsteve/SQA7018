@@ -30,6 +30,10 @@ a = [1, 2, 3]
 b = [4, 5, 6]
 c = [7, 8, 9]
 
+#Quiz 5 Q7, will ignore additional elements beyond the third
+# a = [1,2,3,4]
+# b = [4,5,6,7]
+
 print("Dot product (a · b):", dot_product(a, b))         # Expected output: scalar value
 print("Cross product (a × b):", cross_product(a, b))      # Expected output: vector
 print("Scalar triple product (a · (b × c)):", scalar_triple_product(a, b, c))  # Expected output: scalar value

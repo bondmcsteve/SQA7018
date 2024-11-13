@@ -44,20 +44,22 @@ def get_word_frequencies(text):
 
 def top_n_words(word_counts, n=100):
     """Return the top n words sorted by frequency."""
-    most_common = word_counts.most_common(n)
+    most_common = word_counts.most_common(n) #Value for word_counts pulled from get_word_frequencies()
     return most_common
 
 def plot_zipfs_law(word_counts, top_n=2000):
     """Plot the observed word frequencies and Zipf's Law for comparison."""
     # Get the top_n most common words
-    most_common_words = word_counts.most_common(top_n)
+    most_common_words = word_counts.most_common(top_n) #Value for word_counts pulled from get_word_frequencies()
     
     # Prepare data for Zipf's Law plot
     ranks = []
     frequencies = []
     
     for rank, (word, freq) in enumerate(most_common_words, start=1):
+        """Adds the enumeration index representing frequency ranking after converting into natural log"""
         ranks.append(math.log(rank))
+        """Adds freq into frequencies after converting into natural log"""
         frequencies.append(math.log(freq))
     
     # Plot observed frequencies

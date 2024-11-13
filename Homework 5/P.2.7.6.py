@@ -15,6 +15,8 @@ import math
 # No need for even and odd distinction in P2.4.6
 def double_factorial(n):
     """Calculate the double factorial of n."""
+    if n<0 :
+        raise ValueError("Negative Input is not allowed.")
     if n <= 0:
         return 1
     result = 1
@@ -36,10 +38,15 @@ def sinm_cosn(m, n):
     return result
 
 
-m = 4  # example m (even)
-n = 6  # example n (even)
-print("Integral result for m = 4 and n = 6:", sinm_cosn(m, n))
+# m = 4  # example m (even)
+# n = 6  # example n (even)
+# print("Integral result for m = 4 and n = 6:", sinm_cosn(m, n))
+#
+# m = 3  # example m (odd)
+# n = 5  # example n (odd)
+# print("Integral result for m = 3 and n = 5:", sinm_cosn(m, n))
 
-m = 3  # example m (odd)
-n = 5  # example n (odd)
-print("Integral result for m = 3 and n = 5:", sinm_cosn(m, n))
+# Quiz 5, Q8, ValueError() is raised
+m = 0  # example m (odd)
+n = 1  # example n (odd)
+print("Integral result for m = 0 and n = 1:", sinm_cosn(m, n))
