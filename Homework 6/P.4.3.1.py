@@ -11,5 +11,11 @@ M = [
     [7, 8, 9]
 ]
 
-trace = calculate_trace(M)
+N = [
+    [10, 20],
+    [30, 40, 50],
+    [60, 70, 80]
+]
+
+trace = calculate_trace(N)
 print("Trace of the matrix:", trace)  # Expected output: 15 (1 + 5 + 9)
