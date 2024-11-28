@@ -7,9 +7,12 @@ arr = np.array([(1,0,0), (0,1,0), (0,0,1)], dtype=float)
 
 #ignore
 arr2 = np.array([(1,0,0), (0,1,0)])
-#arr3 = np.array([1,0,0], [0,1,0], [0,0,1], dtype=float)
+arr3 = np.array([[1,0,0], [0,1,0], [0,0,1]])
 print(arr)
 print(np.ndim(arr))
 
 print(arr2)
 print(np.ndim(arr2))
+
+print(arr3)
+print(np.ndim(arr3))

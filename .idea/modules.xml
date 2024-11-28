@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SQA7018.iml" filepath="$PROJECT_DIR$/.idea/SQA7018.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../astro-jet/.idea/astro-jet.iml" filepath="$PROJECT_DIR$/../astro-jet/.idea/astro-jet.iml" />
     </modules>
   </component>
 </project>

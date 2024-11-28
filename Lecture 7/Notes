@@ -1,0 +1,41 @@
+Key ideas in computational thinking:
+1. Problem decomposition -> Finding the core issue, break the problem down
+2. Abstraction -> Do we need the absolute knowledge to run things?
+3. Pattern recognition -> Any similar pattern from solved problem which we can lift from?
+4. Algorithmic thinking -> Process of thoughts
+    a. Flowchart
+5. Debugging
+6. Decision
+
+Complex problem = A problem that, at first, is not easy to solve or to understand
+
+---in Biology---
+Shotgun algorithm for expediting genome sequencing
+Boolean networks for dynamics approximation of biological network
+Cells as self regulatory system similar to electronic circuit
+Process calculi model interaction between molecules
+Statecharts application in developmental genetics
+Protein kinetics modelled as computational processes
+
+---Model Checking Primer---
+General essence:
+Model checker as a black box, takes in 2 inputs.
+i. Finite state machine (Finite number of states)
+ii. A property, some logical framework of process
+
+A machine is usually designed in a way that we get expected results, but bugs
+tend to happen in practical applications
+
+Correlation with biology?
+- Nothing at first glance, but we can see application in
+3-residue protein representation
+- Rate of protein folding
+
+---5 deep questions in computing---
+1. what is computable?
+2. P=NP?
+3. What is intelligence?
+4. What is information?
+Shannon Information Theory? It is just a method of communicating in noisy system?
+5. How can we build complex systems simply?
+
