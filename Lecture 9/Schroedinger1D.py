@@ -15,8 +15,8 @@ class Schroedinger:
         self.mass = 1
         self.x_discrete = []
 
-    def Ke_prefactor:
-        prefactor = -(h_bar**2) / 2m
+    def Ke_prefactor(self):
+        prefactor = -(h_bar**2) / (2 * self.mass)
 
     """Declaring discrete instance"""
     def discretize(self):
